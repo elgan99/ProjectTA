@@ -1,0 +1,27 @@
+{% extends "otomasiAcl/base.html" %}
+
+{%block content%}
+<div class="row d-flex align-items-md-stretch">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <!-- <div class="card-header d-flex align-items-center">
+                <h4>History</h4> -->
+            </div>
+            <div class="card-body">
+            <table class="table">
+                <tr>
+                    <th>IP</th>
+                    <th>Config Access-List</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                {% for iptable in ip %}
+                <tr>
+                    <td>{{ iptable.Ip }}</td>
+                    <td>{{ iptable.acl }}</td>
+                    <td><a class="btn-sm btn-info" href="">EDIT</a></td>
+                    <td><a class="btn-sm btn-info" href="">REMOVE</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+    {%endblock content%}

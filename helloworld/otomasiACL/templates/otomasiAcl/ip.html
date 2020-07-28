@@ -1,0 +1,10 @@
+{% extends "otomasiAcl/base.html" %}
+{# otomasiACL/templates/otomasiAcl/ip.html #}
+{% load render_table from django_tables2 %}
+
+{%block content%}
+    <body>
+        {% render_table object_list %}
+    </body>
+</html>
+{%endblock content%}
