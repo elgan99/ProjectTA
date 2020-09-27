@@ -25,7 +25,7 @@ SECRET_KEY = '%td(f!*of$%@26ldzgx5v)h4302$0*v-p*)zr62ghu)r%n)ask'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.100.150']
+ALLOWED_HOSTS = ['192.168.1.150']
 
 
 # Application definition
@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework_mongoengine',
+#    'rest_framework',
+#    'rest_framework_mongoengine',
     'django_mongoengine',
     'django_mongoengine.mongo_auth',
     'django_mongoengine.mongo_admin',
-    'django_tables2',
+#    'django_tables2',
     'dj_ansible',
 #    'otomasiACL',
 ]

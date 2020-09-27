@@ -14,4 +14,7 @@ from mongoengine import *
 class IP(models.Model):
     Ip = models.CharField(max_length=100, verbose_name="Alamat IP")
     acl = models.CharField(max_length=255, verbose_name="Konfigurasi Access-List", default="")
+    destination = models.CharField(max_length=255, verbose_name="IP Tujuan", default="")
+    port = models.CharField(max_length=255, verbose_name="Port", default="")
+    NumId = models.CharField(max_length=255, verbose_name="NumId", default="")
     

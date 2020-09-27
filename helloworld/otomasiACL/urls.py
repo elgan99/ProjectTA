@@ -10,5 +10,6 @@ from django_mongoengine import mongo_admin
 
 urlpatterns = [
     path('', views.home, name='otomasi-acl'),
+    path('delete_ip/<int:id>/', views.deleteIp, name='deleteIp')
     # path("ip/", IPListView.as_view(template_name='otomasiAcl/ip.html'), name='ip')
 ]
